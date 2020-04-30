@@ -36,9 +36,9 @@ With this directory structure, you don't need any project  configuration or spec
 
 ### Deploy this project to the Nimbella Cloud
 
-If you have the [Nimbella command line tool called `nim`](https://nimbella.io/downloads/nim/nim.html#install-the-nimbella-command-line-tool-nim) installed, you can deploy this project directly from GitHub.  Or, you can clone this repository and deploy from clone.
+If you have the [Nimbella command line tool called `nim`](https://nimbella.io/downloads/nim/nim.html#install-the-nimbella-command-line-tool-nim) installed, you can deploy this project directly from GitHub.  Or, you can clone this repository and deploy from the clone.
 
-- To deploy from github
+- To deploy from GitHub
 
   `nim project deploy github:nimbella/demo-projects/visits`
 

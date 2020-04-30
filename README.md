@@ -24,7 +24,8 @@ The tutorial introduction has the following parts:
 
 To understand these tutorials, the following developer skills are helpful:
 
-- Knowledge of JavaScript.
+- Knowledge of JavaScript
+- Some knowledge of the NPM tool
 
 To run these tutorials yourself, you'll need the following:
 - A [Nimbella Cloud account](https://nimbella.com) (click the button for free signup).
