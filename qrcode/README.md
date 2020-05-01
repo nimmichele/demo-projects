@@ -2,7 +2,7 @@
 
 This tutorial explains the QR Code Generator demo and shows you how to deploy it to the Nimbella Cloud.
 
-This app is a stateless single-page web application that generates a [QR code](https://en.wikipedia.org/wiki/QR_code) from text that a user submits.
+This app is a stateless single-page web application that generates a [QR code](https://en.wikipedia.org/wiki/QR_code) from text that a user submits. You can [try out the application here](https://qrdemo-apigcp.nimbella.io).
 
 This project has the following components:
 
@@ -16,7 +16,7 @@ The GitHub project has the file structure that Nimbella uses to intelligently de
 
 ![](../images/qrcodetutorial-d1d54d1b.svg)
 
-The [`packages`](./packages/visits) directory contains the project's API implementation, and in this example, there's only one API implemented by a single function, known as an _action_. The first subdirectory name usually serves as the package qualifier, but when it's named [`default`](./packages/default), no qualifier is prepended to the action name. The next subdirectory, [`qr`](./packages/default/qr), is the name of the action, and the file [`qr.js`](./packages/default/qr/qr.js) contains the logic for that action.
+The [`packages`](./packages/visits) directory contains the project's API implementation, and in this example, there's only one API implemented by a single function, known as an _action_. The first subdirectory name usually serves as the package qualifier. The next subdirectory, [`qr`](./packages/default/qr), is the name of the action, and the file [`qr.js`](./packages/default/qr/qr.js) contains the logic for that action. The qualified name of the action is also the name of the API it implements which is `default/qr` in this case.
 
 The [`web`](./web) directory contains the web content for the project. In this case, there is just one HTML file and one image. The [`index.html`](./web/index.html) file contains a form with a text box for the user to input the text that will be converted.
 
@@ -30,7 +30,7 @@ The [`index.html`](./web/index.html) file contains the usual markup and logic th
 
 ### Notes on `package.json`
 
-The [`package.json`](./packages/default/qr/package.json) file in the [`qr`](./packages/default/qr) directory triggers an automatic build of the action when the function in [`qr.js`](./packages/default/qr/qr.js) is modified. For more information about builds, see the [section on incorporating build steps in the Nimbella Command Line Tool document](https://nimbella.io/downloads/nim/nim.html#incorporating-build-steps-for-actions-and-web-content).
+The [`package.json`](./packages/default/qr/package.json) file in the [`qr`](./packages/default/qr) directory triggers an automatic build of the action when the function in [`qr.js`](./packages/default/qr/qr.js) is modified. For more information about builds, see the [section on incorporating build steps in the Nimbella Command Line Tool Guide](https://nimbella.io/downloads/nim/nim.html#incorporating-build-steps-for-actions-and-web-content).
 
 ### Deploy this project to the Nimbella Cloud
 

@@ -19,7 +19,7 @@ The GitHub project has the file structure that Nimbella uses to deploy the proje
 
 Actions are serverless APIs. They run as serverless functions in the Nimbella cloud.
 
-Actions are located under the [`packages`](./packages/visits) directory and determined by the subdirectory structure. In this case, the subdirectory called `visits` serves as a qualifier for the project's two actions. The `visits` directory contains two PHP files, which are determined to be two actions: `visits/counter` and `visits/info`.
+Actions are located under the [`packages`](./packages/visits) directory and determined by the subdirectory structure. In this case, the subdirectory called `visits` serves as a qualifier for the project's two actions. The `visits` directory contains two PHP files, which are determined to be two actions: `visits/counter` and `visits/info`. The qualified name of an action is also the name of the API it implements.
 
 - The code for the `counter` action in [`counter.php`](./packages/vists/counter.php) uses a Nimbella provided key-value store accessible through a [Redis SDK](https://redis.io). Nimbella provides a unique key-value instance for each user account. The `counter` action checks for a cookie first, and if none is found, it increments the count by one and writes to the cookie.
 
